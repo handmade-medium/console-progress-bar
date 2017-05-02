@@ -1,4 +1,36 @@
 {
+    "name": "handmade-medium/console-progress-bar",
+    "type": "library",
+    "description": "PHP Console Progress Bar",
+    "keywords": ["console","cli","php","progress","progress bar","drush"],
+    "homepage": "https://github.com/handmade-medium/console-progress-bar",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Jim Conte",
+            "email": "jimconte+github@gmail.com",
+            "homepage": "https://jimconte.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "drush/drush": "~8.0",
+        "phpunit/phpunit": ">5.5"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "HandmadeMedium\\ProgressBar\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HandmadeMedium\\ProgressBar\\Tests\\": "tests",
+            "HandmadeMedium\\ProgressBar\\TestLib\\": "testlib"
+        }
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"

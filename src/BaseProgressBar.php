@@ -66,7 +66,7 @@ abstract class BaseProgressBar {
      * @param int $count The current value to compare against the Total Count
      * @return string
      */
-    public function getProgress($count) {
+    protected function getProgress($count) {
         if ($this->isComplete) return null;
         $progress = floor(($count / $this->totalCount) * 100);
         $bars = str_repeat('=',floor($progress / $this->size));
